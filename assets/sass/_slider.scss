@@ -1,149 +1,146 @@
 .hero {
-    display: flex;
-    gap: 20px;
-    box-sizing: border-box;
-    @media (max-width: 1280px) and (min-width: 768px) {
-        flex-direction: column;
-        padding: 40px;
-
+  display: flex;
+  gap: 20px;
+  box-sizing: border-box;
+  @media (max-width: 1280px) and (min-width: 768px) {
+    flex-direction: column;
+    padding: 40px;
+  }
+  @media (max-width: 767px) {
+    flex-direction: column;
+    padding: 40px;
+  }
+  .slider {
+    height: 629px;
+    max-width: 955px;
+    width: 100%;
+    border-radius: 20px;
+    margin: 0;
+    @media (max-width: 1280px) and (min-width: 767px) {
+      max-width: 100%;
+      // height: calc(100vw / 2)
     }
     @media (max-width: 767px) {
-        flex-direction: column;
-        padding: 40px;
+      height: calc(80vw * 9 / 16);
     }
-    .slider {
-        height: 629px;
-        max-width: 955px;
-        width: 100%;
-        border-radius: 20px;
+    &__item {
+      &--first {
+        background: url("./assets/images/hero_bg/bg_first.png") no-repeat
+          center/cover;
+        // @media (max-width: 767px) {
+        //     background: url('/assets/images/hero_bg/bg_first.png') no-repeat center/contain;
+        //  }
+      }
+      &--second {
+        background: url("./assets/images/hero_bg/bg_second.png") no-repeat
+          center/cover;
+        // @media (max-width: 767px) {
+        //     background: url('/assets/images/hero_bg/bg_second.png') no-repeat center/contain;
+        //  }
+      }
+    }
+    &__content {
+      display: grid;
+      padding-top: 89px;
+      padding-left: 101px;
+      @media (max-width: 767px) {
+        padding: 25px;
+        height: auto;
+        width: 50%;
+      }
+    }
+    &__label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+      font-family: Manrope;
+      border-radius: 50px;
+      box-sizing: border-box;
+
+      &--first {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        width: 267px;
+        height: 38px;
+      }
+      &--second {
+        font-weight: 700;
+        font-size: 28px;
+        width: 267px;
+        height: 38px;
+        color: rgba(89, 77, 62, 1);
+      }
+      margin-bottom: 25px;
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+    &__title {
+      font-family: Manrope;
+      max-height: 181px;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 120%;
+      letter-spacing: 0%;
+      color: rgba(89, 77, 62, 1);
+      margin: 0;
+      margin-bottom: 15px;
+      @media (max-width: 767px) {
+        font-size: clamp(14px, 4vw, 30px);
+        margin-bottom: 20px;
+      }
+    }
+    &__button {
+      height: 58px;
+      width: 225px;
+      background: rgba(89, 77, 62, 1);
+      border-radius: 50px;
+      border: none;
+      outline: none;
+      font-family: Manrope;
+      font-weight: 700;
+      font-size: 16px;
+      cursor: pointer;
+      color: #fff;
+      box-sizing: border-box;
+      @media (max-width: 767px) {
+        display: inline-block;
+        height: 40px;
+        font-size: clamp(14px, 1.5vw, 16px);
+
+        max-width: 100px;
+      }
+    }
+
+    &__icon {
+      &--dr {
+        margin-top: 72px;
+      }
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+
+    .patient-reviews {
+      margin-top: 49px;
+      display: grid;
+      @media (max-width: 767px) {
+        display: none;
+      }
+      &__title {
+        font-family: Manrope;
+        font-weight: 400;
         margin: 0;
-        @media (max-width: 1280px) and (min-width: 767px) {
-            max-width: 100%;
-            // height: calc(100vw / 2)
-        }
-        @media (max-width: 767px) {
-            height: calc(80vw * 9 / 16);
-       
-        }
-        &__item {
-            &--first {
-                background: url('/assets/images/hero_bg/bg_first.png') no-repeat center/cover;  
-                // @media (max-width: 767px) {
-                //     background: url('/assets/images/hero_bg/bg_first.png') no-repeat center/contain;
-                //  }
-            }
-            &--second {
-                background: url('/assets/images/hero_bg/bg_second.png') no-repeat center/cover;
-                // @media (max-width: 767px) {
-                //     background: url('/assets/images/hero_bg/bg_second.png') no-repeat center/contain;
-                //  }
-            }
-        }
-        &__content {
-            display: grid;
-            padding-top: 89px;
-            padding-left: 101px;
-            @media (max-width: 767px) {
-                padding: 25px;
-                height: auto;
-                width: 50%;    
-            }
-        }
-        &__label {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #fff;
-            font-family: Manrope;
-            border-radius: 50px;
-            box-sizing: border-box;
-         
-            &--first {
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 100%;
-                width: 267px;
-                height: 38px;
-            }
-            &--second {
-                font-weight: 700;
-                font-size: 28px;
-                width: 267px;
-                height: 38px;
-                color: rgba(89, 77, 62, 1);
-
-            }
-            margin-bottom: 25px;
-            @media (max-width: 767px) {
-                display: none;
-             }
-        }
-        &__title {
-            font-family: Manrope;
-            max-height: 181px;
-            font-weight: 700;
-            font-size: 48px;
-            line-height: 120%;
-            letter-spacing: 0%;
-            color: rgba(89, 77, 62, 1);
-            margin: 0;
-            margin-bottom: 15px;
-            @media (max-width: 767px) {
-                font-size: clamp(14px, 4vw, 30px); 
-                margin-bottom: 20px;
-            }
-        }
-        &__button {
-            height: 58px;
-            width: 225px;
-            background: rgba(89, 77, 62, 1);
-            border-radius: 50px;
-            border: none;
-            outline: none;
-            font-family: Manrope;
-            font-weight: 700;
-            font-size: 16px;
-            cursor: pointer;
-            color: #fff;
-            box-sizing: border-box;
-            @media (max-width: 767px) {
-                display: inline-block;
-                height: 40px;
-                font-size: clamp(14px, 1.5vw, 16px);
-
-                max-width: 100px;
-            }
-        }
-
-        &__icon {
-            &--dr {
-                margin-top: 72px;
-               
-            }
-            @media (max-width: 767px) {
-                display: none;
-             }
-        }
-
-        .patient-reviews {
-            margin-top: 49px;
-            display: grid;
-            @media (max-width: 767px) {
-                display: none;
-             }
-            &__title {
-                font-family: Manrope;
-                font-weight: 400;
-                margin: 0;
-                transform: translateY(30%);
-            }
-            &__icon:last-child {
-                transform: translateY(-30%);
-            }
-        }
+        transform: translateY(30%);
+      }
+      &__icon:last-child {
+        transform: translateY(-30%);
+      }
     }
+  }
 
-    .info-cards {
-    
-    }
+  .info-cards {
+  }
 }

@@ -43,10 +43,10 @@
   }
 }
 .hero .slider__item--first {
-  background: url("/assets/images/hero_bg/bg_first.png") no-repeat center/cover;
+  background: url("./assets/images/hero_bg/bg_first.png") no-repeat center/cover;
 }
 .hero .slider__item--second {
-  background: url("/assets/images/hero_bg/bg_second.png") no-repeat center/cover;
+  background: url("./assets/images/hero_bg/bg_second.png") no-repeat center/cover;
 }
 .hero .slider__content {
   display: grid;
@@ -429,7 +429,7 @@
   left: 0;
   width: 24px;
   height: 24px;
-  background: url("/assets/images/lets-icons_done-ring-round.svg") no-repeat left center;
+  background: url("./assets/images/lets-icons_done-ring-round.svg") no-repeat left center;
   background-size: contain;
 }
 .about .clinic-consulation__button {
@@ -936,7 +936,7 @@
           box-sizing: border-box;
   padding-top: 57px;
   padding-left: 109px;
-  background: url("/assets/images/qualification_rectangle.png") no-repeat center/cover;
+  background: url("./assets/images/qualification_rectangle.png") no-repeat center/cover;
 }
 .qualification__title {
   font-family: Manrope;
