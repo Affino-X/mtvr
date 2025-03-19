@@ -25,17 +25,17 @@
     }
     &__item {
       &--first {
-        background: url("/assets/images/hero_bg/bg_first.png") no-repeat
+        background: url("/mtvr/assets/images/hero_bg/bg_first.png") no-repeat
           center/cover;
         // @media (max-width: 767px) {
-        //     background: url('/assets/images/hero_bg/bg_first.png') no-repeat center/contain;
+        //     background: url('/mtvr/assets/images/hero_bg/bg_first.png') no-repeat center/contain;
         //  }
       }
       &--second {
-        background: url("/assets/images/hero_bg/bg_second.png") no-repeat
+        background: url("/mtvr/assets/images/hero_bg/bg_second.png") no-repeat
           center/cover;
         // @media (max-width: 767px) {
-        //     background: url('/assets/images/hero_bg/bg_second.png') no-repeat center/contain;
+        //     background: url('/mtvr/assets/images/hero_bg/bg_second.png') no-repeat center/contain;
         //  }
       }
     }
