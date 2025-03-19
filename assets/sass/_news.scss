@@ -1,0 +1,80 @@
+.news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 81px;
+  margin-bottom: 58px;
+  &__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(242, 239, 233, 1);
+    border: none;
+    border-radius: 50px;
+    width: 225px;
+    height: 58px;
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 16px;
+    color: rgba(89, 77, 62, 1);
+  }
+
+  // .news__title
+
+  &__title {
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.4;
+    letter-spacing: 0%;
+    color: rgba(0, 0, 0, 1);
+    margin-top: 22px;
+    margin-bottom: 44px;
+    text-align: center;
+  }
+  // .news__cards
+
+  &__cards {
+    display: flex;
+    gap: 20px;
+  }
+
+  // .news__item
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    max-width: 305px;
+    width: 100%;
+  }
+
+  // .news__image
+
+  &__image {
+  }
+
+  // .news__subtitle
+
+  &__subtitle {
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.3;
+    letter-spacing: 0%;
+    color: #000;
+    margin: 0;
+    margin-top: 22px;
+    margin-bottom: 12px;
+  }
+  // .news__excerpt
+
+  &__excerpt {
+    margin-top: auto;
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000;
+  }
+}

@@ -1,0 +1,23 @@
+@use "slider";
+@use "info-cards";
+@use "about";
+@use "services";
+@use "promotions";
+@use "staff";
+@use "qualification";
+@use "dentistry";
+@use "news";
+@use "header";
+@use "footer";
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  max-width: 1280px;
+  margin: 0 auto;
+  height: auto;
+}

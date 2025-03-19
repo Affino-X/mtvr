@@ -1,0 +1,201 @@
+.footer {
+  max-width: 1280px;
+  margin: 0 auto;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(89, 77, 62, 1);
+    width: 100%;
+    height: 630px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 0 108px;
+  }
+
+  // .footer__info
+
+  &__info {
+    color: #fff;
+  }
+
+  // .footer__title
+
+  &__title {
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+
+  // .footer__text
+
+  &__text {
+    display: flex;
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 12px;
+    margin-bottom: 21px;
+    &:nth-of-type(1) {
+      gap: 127px;
+    }
+    &:nth-of-type(n + 2) {
+      gap: 25px;
+      margin: 25px 0;
+    }
+  }
+
+  // .footer__time
+
+  &__time {
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+
+  // .footer__button
+
+  &__button {
+    width: 167px;
+    height: 55px;
+    background: rgba(242, 239, 233, 1);
+    border: none;
+    outline: none;
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(89, 77, 62, 1);
+    border-radius: 40px;
+    margin-bottom: 35px;
+  }
+
+  // .footer__label
+
+  &__label {
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+
+  // .footer__address
+
+  &__address {
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: inherit;
+  }
+
+  // .footer__link
+
+  &__link {
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: inherit;
+  }
+
+  &__email {
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  // .footer__socials
+
+  &__socials {
+    display: flex;
+    gap: 29px;
+    margin-top: 30px;
+  }
+
+  // .footer__social-link
+
+  &__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+  }
+
+  // .footer__map
+
+  &__map {
+    width: 522px;
+    height: 511px;
+  }
+
+  // .footer__iframe
+
+  &__iframe {
+    border-radius: 20px;
+  }
+
+  // .footer__bottom
+
+  &__bottom {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    padding: 0 108px;
+    padding-top: 22px;
+    padding-bottom: 49px;
+    box-sizing: border-box;
+  }
+
+  // .footer__privacy
+
+  &__privacy {
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: none;
+    color: #000;
+  }
+
+  // .footer__copyright
+
+  &__copyright {
+    grid-row: 2;
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+
+  // .footer__company-info
+
+  &__company-info {
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3;
+    letter-spacing: 0%;
+    max-width: 427px;
+    width: 100%;
+  }
+}

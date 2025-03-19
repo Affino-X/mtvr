@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVRT</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <!-- Верхний блок -->
+        <div class="header__top">
+          <div class="header__wrapper">
+            <p class="header__announcement">Здесь краткая акция или текст про: узнай больше о нас через отзывы...</p>
+            <div class="header__contacts">
+              <a href="tel:+79670103003" class="header__phone">+7 (967) 010-30-03</a>
+              <a href="https://vk.com/vrach_praktika" 
+                class="header__address" 
+                target="_blank">
+                улица Семёна Гордого, 1, Москва
+                </a>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Нижний блок -->
+        <div class="header__bottom">
+            <div class="header__wrapper">
+                <a href="/" class="header__logo">
+                    <img src="assets/images/logo.svg" alt="Логотип">
+                  </a>
+                  <nav class="header__nav">
+                    <a href="#">Услуги</a>
+                    <a href="#">Прайс</a>
+                    <a href="#">Врачи</a>
+                    <a href="#">Стоматология</a>
+                    <a href="#">Контакты</a>
+                  </nav>
+                  <div class="header__actions">
+                    <button class="header__search">
+                      <img src="assets/images/cuida_search-outline.svg" alt="Поиск">
+                    </button>
+                    <button class="header__appointment">Записаться</button>
+                  </div>
+            </div>
+        </div>
+    </header>  
+    <!-- main -->
+    <div class="main" id="main">
+      <section class="hero">
+            <!-- slider -->
+            <div class="swiper slider">
+                <div class="swiper-wrapper">
+                     <div class="swiper-slide slider__item slider__item--first">
+                        <div class="slider__content">
+                            <span class="slider__label slider__label--first">Забота, которой можно доверять!</span>
+                            <h2 class="slider__title">Высшее качество <br> диагностики <br> и лечения</h2>
+                            <button class="slider__button">Записаться</button>
+                            <div class="patient-reviews">
+                                <span class="patient-reviews__title">Отзывы пациентов</span>
+                                <img class="patient-reviews__icon" src="/assets/images/hero_icon/yandex_reviews.svg" alt="yandex/reviews">
+                                <img class="patient-reviews__icon" src="/assets/images/hero_icon/stars.svg" alt="stars">
+                            </div>
+                        </div>  
+                     </div>
+                     <div class="swiper-slide slider__item slider__item--second">
+                        <div class="slider__content">
+                            <span class="slider__label slider__label--second">+7 967 010 30 03</span>
+                            <h2 class="slider__title">Помощь <br> в шаге <br> от Вас!</h2>
+                            <button class="slider__button">Записаться</button>
+                            <img class="slider__icon slider__icon--dr" src="/assets/images/hero_icon/dr_practice.svg" alt="">
+                        </div>  
+                     </div>
+                </div>
+            </div>
+
+            <div class="info-cards">
+                <a class="info-cards__item info-cards__item--teeth" href="#">
+                    <div class="info-cards__icon">
+                        <img src="/assets/images/hero_icon/health_dentist.svg" alt="icon">
+                    </div>
+                    <h3 class="info-cards__title">Стоматологическая клиника</h2>
+                    <span class="info-cards__subtitle">Все виды стоматологических услуг</span>
+                    <img  class="info-cards__arrow" src="/assets/images/hero_icon/arrow_up.svg" alt="arrow">
+                    <img class="info-cards__intersect info-cards__intersect--first" src="/assets/images/Intersect.svg" alt="">
+                </a>
+                <a class="info-cards__item info-cards__item--analyze" href="#">
+                    <div class="info-cards__icon">
+                        <img src="/assets/images/hero_icon/health_list.svg" alt="icon">
+                    </div>
+                    <h3 class="info-cards__title">Комплексное обследование</h2>
+                    <span class="info-cards__subtitle">Профилактические чек-апы</span>
+                    <img  class="info-cards__arrow" src="/assets/images/hero_icon/arrow_up.svg" alt="arrow">
+                    <img class="info-cards__intersect info-cards__intersect--second" src="/assets/images/Intersect(1).svg" alt="">
+                </a>
+                <a class="info-cards__item info-cards__item--health" href="#">
+                    <div class="info-cards__icon">
+                        <img src="/assets/images/hero_icon/health_heart.svg" alt="icon">
+                    </div>
+                    <h3 class="info-cards__title">Тепло, забота, профессионализм</h2>
+                    <span class="info-cards__subtitle">Ваше здоровье - наша забота</span>
+                    <img  class="info-cards__arrow" src="/assets/images/hero_icon/arrow_up.svg" alt="arrow">
+                    <img class="info-cards__intersect info-cards__intersect--third" src="/assets/images/Intersect(2).svg" alt="">
+                </a>
+            </div>
+      </section>
+      <section class="about"> 
+        <div class="clinic-info">
+            <img src="assets/images/top_rectangle_img.png" alt="Клиника" class="clinic-info__photo clinic-info__photo--top">
+            <img src="assets/images/bottom_rectangle_img.png" alt="Кабинет" class="clinic-info__photo  clinic-info__photo--bottom">
+            <img src="assets/images/logo_site.png" alt="Иконка" class="clinic-info__icon">
+            <div class="clinic-info__card">
+                <div class="clinic-info__circle">
+                    <img src="assets/images/personal_medic.svg" alt="Иконка">
+                </div>
+                <p class="clinic-info__text"><span class="clinic-info__num">20+</span>Персонал клиники</p>
+            </div>
+        </div>
+        <div class="clinic-consulation">
+            <span class="clinic-consulation__label">О нас</span>
+            <h3 class="clinic-consulation__title">
+                Мы рядом, <br> 
+                когда это важно
+            </h3>
+            <p class="clinic-consulation__excerpt">
+                Медицинский центр «Врачебная практика» — это современная клиника, где забота о вашем здоровье стоит на первом месте. Мы предлагаем широкий спектр медицинских услуг, включая диагностику, консультативные приемы специалистов и круглосуточную стоматологию. В клинике созданы комфортные условия для пациентов любого возраста.
+            </p>
+            <ul class="clinic-consulation__list">
+                <li class="clinic-consulation__item">Круглосуточная стоматология</li>
+                <li class="clinic-consulation__item">Все виды анализов</li>
+                <li class="clinic-consulation__item">Опытные специалисты</li>
+                <li class="clinic-consulation__item">Современное оборудование</li>
+            </ul>
+            <p class="clinic-consulation__excerpt">
+                Мы понимаем, как важно своевременно выявить проблему и найти оптимальное решение. Независимо от сложности ситуации, мы всегда готовы помочь вам и вашим близким. Ваше здоровье — наша забота!
+            </p>    
+            <a class="clinic-consulation__button" href="#"><span>Получить консультацию</span><img src="assets/images/arrow_right.svg" alt="arrow"></a>
+        </div>
+      </section>
+      <section class="services">
+        <div class="about-services">
+            <span class="about-services__label">Наши услуги</span>
+            <h3 class="about-services__title">
+                Весь спектр медицинских <br>
+                услуг в одном месте
+            </h3>
+            <div class="about-services__cards">
+                <div class="about-services__item">
+                    <div class="about-services__icon about-services__icon--1">
+                        <img src="assets/images/services_icon/material-symbols-light_ecg-heart-outline.svg" alt="icon">
+                    </div>
+                    <span class="about-services__subtitle">Кардиолог</span>
+                    <ul class="about-services__list">
+                        <li class="about-services__item-text">ЭКГ и холтеровское мониторирование</li>
+                        <li class="about-services__item-text">Диагностика и лечение гипертонии</li>
+                        <li class="about-services__item-text">Лечение сердечной недостаточности</li>
+                        <li class="about-services__item-text">Консультации</li>
+                    </ul>
+                    <a href="#" class="about-services__link">
+                        <span>Записаться</span>
+                        <img src="assets/images/basil_arrow-up-solid.svg" alt="">
+                    </a>
+                </div>
+                <div class="about-services__item">
+                    <div class="about-services__icon about-services__icon--2">
+                        <img src="assets/images/services_icon/solar_stethoscope-linear.svg" alt="icon">
+                    </div>
+                    <span class="about-services__subtitle">Терапевт</span>
+                    <ul class="about-services__list">
+                        <li class="about-services__item-text">Лечение ОРВИ и простуды</li>
+                        <li class="about-services__item-text">Контроль хронич. заболеваний</li>
+                        <li class="about-services__item-text">Обследование и анализы</li>
+                        <li class="about-services__item-text">Подбор терапии</li>
+                    </ul>
+                    <a href="#" class="about-services__link">
+                        <span>Записаться</span>
+                        <img src="assets/images/basil_arrow-up-solid.svg" alt="">
+                    </a>
+                </div>
+                <div class="about-services__item">
+                    <div class="about-services__icon about-services__icon--3">
+                        <img src="assets/images/services_icon/healthicons_neurology-outline.svg" alt="icon">
+                    </div>
+                    <span class="about-services__subtitle">Невролог</span>
+                    <ul class="about-services__list">
+                        <li class="about-services__item-text">Диагностика головных болей и мигрени</li>
+                        <li class="about-services__item-text">Лечение заболеваний позвоночника</li>
+                        <li class="about-services__item-text">Терапия нервных расстройств</li>
+                        <li class="about-services__item-text">Лечение последствий инсульта</li>
+                        <li class="about-services__item-text">Тейпирование и блокады</li>
+                       
+
+
+
+
+                    </ul>
+                    <a href="#" class="about-services__link">
+                        <span>Записаться</span>
+                        <img src="assets/images/basil_arrow-up-solid.svg" alt="">
+                    </a>
+                </div>
+                <div class="about-services__item">
+                    <div class="about-services__icon about-services__icon--4">
+                        <img src="assets/images/services_icon/hugeicons_kidneys.svg" alt="icon">
+                    </div>
+                    <span class="about-services__subtitle">Уролог</span>
+                    <ul class="about-services__list">
+                        <li class="about-services__item-text">Лечение цистита и уретрита</li>
+                        <li class="about-services__item-text">Диагностика заболеваний простаты</li>
+                        <li class="about-services__item-text">Терапия мочекаменной болезни</li>
+                        <li class="about-services__item-text">Лечение мужского бесплодия</li>
+                    </ul>
+                    <a href="#" class="about-services__link">
+                        <span>Записаться</span>
+                        <img src="assets/images/basil_arrow-up-solid.svg" alt="">
+                    </a>
+                </div>
+                <div class="about-services__item">
+                    <div class="about-services__icon about-services__icon--5">
+                        <img src="assets/images/services_icon/icon-park-outline_uterus.svg" alt="icon">
+                    </div>
+                    <span class="about-services__subtitle">Акушер-гинеколог</span>
+                    <ul class="about-services__list">
+                        <li class="about-services__item-text">Kечение заболеваний шейки матки <br> и вульвы;</li>
+                        <li class="about-services__item-text">Эстетическая коррекция НПО</li>
+                        <li class="about-services__item-text">Лечение легких форм недержания</li>
+                    </ul>
+                    <a href="#" class="about-services__link">
+                        <span>Записаться</span>
+                        <img src="assets/images/basil_arrow-up-solid.svg" alt="">
+                    </a>
+                </div>
+                <div class="about-services__item">
+                    <div class="about-services__icon about-services__icon--6">
+                        <img src="assets/images/services_icon/healthicons_stomach-outline.svg" alt="icon">
+                    </div>
+                    <span class="about-services__subtitle">Гастроэнтеролог</span>
+                    <ul class="about-services__list">
+                        <li class="about-services__item-text">Диагностика и лечение гастрит</li>
+                        <li class="about-services__item-text">Терапия синдрома раздраженного кишечника</li>
+                        <li class="about-services__item-text">Обследование печени, желч. пузыря</li>
+                        <li class="about-services__item-text">Лечение язвенной болезни</li>
+                    </ul>
+                    <a href="#" class="about-services__link">
+                        <span>Записаться</span>
+                        <img src="assets/images/basil_arrow-up-solid.svg" alt="">
+                    </a>
+                </div>
+                <!-- hidden -->
+                <div class="about-services__item">
+                    <div class="about-services__icon about-services__icon--7">
+                        <img src="assets/images/services_icon/hugeicons_ear.svg" alt="icon">
+                    </div>
+                    <span class="about-services__subtitle">Отолоринголог (ЛОР)</span>
+                    <ul class="about-services__list">
+                        <li class="about-services__item-text">Лечение гайморита и синусита</li>
+                        <li class="about-services__item-text">Удаление серных пробок</li>
+                        <li class="about-services__item-text">Терапия заболеваний уха, горла, носа</li>
+                        <li class="about-services__item-text">Эндоскопическая диагностика</li>
+                    </ul>
+                    <a href="#" class="about-services__link">
+                        <span>Записаться</span>
+                        <img src="assets/images/basil_arrow-up-solid.svg" alt="">
+                    </a>
+                </div>
+                <div class="about-services__item">
+                    <div class="about-services__icon about-services__icon--8">
+                        <img src="assets/images/services_icon/bi_lungs.svg" alt="icon">
+                    </div>
+                    <span class="about-services__subtitle">Пульмонолог</span>
+                    <ul class="about-services__list">
+                        <li class="about-services__item-text">Диагностика и лечение бронхита</li>
+                        <li class="about-services__item-text">Лечение бронхиальной астмы</li>
+                        <li class="about-services__item-text">Терапия хронических легочных заболеваний</li>
+                    </ul>
+                    <a href="#" class="about-services__link">
+                        <span>Записаться</span>
+                        <img src="assets/images/basil_arrow-up-solid.svg" alt="">
+                    </a>
+                </div>
+                <div class="about-services__item">
+                    <div class="about-services__icon about-services__icon--9">
+                        <img src="assets/images/services_icon/material-symbols-light_endocrinology-outline.svg" alt="icon">
+                    </div>
+                    <span class="about-services__subtitle">Эндокринолог</span>
+                    <ul class="about-services__list">
+                        <li class="about-services__item-text">Диагностика и лечение сахарного диабета</li>
+                        <li class="about-services__item-text">Обследование щитовидной железы</li>
+                        <li class="about-services__item-text">Коррекция гормональных нарушений</li>
+                    </ul>
+                    <a href="#" class="about-services__link">
+                        <span>Записаться</span>
+                        <img src="assets/images/basil_arrow-up-solid.svg" alt="">
+                    </a>
+                </div>
+                <div class="about-services__item">
+                    <div class="about-services__icon about-services__icon--10">
+                        <img src="assets/images/services_icon/healthicons_walk-supported-outline.svg" alt="icon">
+                    </div>
+                    <span class="about-services__subtitle">Физеотерапевт</span>
+                    <ul class="about-services__list">
+                        <li class="about-services__item-text">Лектротерапия и магнитотерапия</li>
+                        <li class="about-services__item-text">Лечение ультразвуком и лазером</li>
+                        <li class="about-services__item-text">Реабилитация после травм и операций</li>
+                        <li class="about-services__item-text">Комплексное восстановление </li>
+                    </ul>
+                    <a href="#" class="about-services__link">
+                        <span>Записаться</span>
+                        <img src="assets/images/basil_arrow-up-solid.svg" alt="">
+                    </a>
+                </div>
+                <div class="about-services__item">
+                    <div class="about-services__icon about-services__icon--11">
+                        <img src="assets/images/services_icon/healthicons_ultrasound-scanner-outline.svg" alt="icon">
+                    </div>
+                    <span class="about-services__subtitle">УЗИ</span>
+                    <ul class="about-services__list">
+                        <li class="about-services__item-text">УЗИ брюшной полости и почек</li>
+                        <li class="about-services__item-text">УЗИ щитовидной железы</li>
+                        <li class="about-services__item-text">УЗИ сосудов и сердца</li>
+                        <li class="about-services__item-text">УЗИ органов малого таза</li>
+                    </ul>
+                    <a href="#" class="about-services__link">
+                        <span>Записаться</span>
+                        <img src="assets/images/basil_arrow-up-solid.svg" alt="">
+                    </a>
+                </div>
+                <div class="about-services__item">
+                    <div class="about-services__icon about-services__icon--12">
+                        <img src="assets/images/services_icon/cuida_heart-rate-outline.svg" alt="icon">
+                    </div>
+                    <span class="about-services__subtitle">Функциональная диагностика</span>
+                    <ul class="about-services__list">
+                        <li class="about-services__item-text">ЭКГ и холтер мониторирование</li>
+                        <li class="about-services__item-text">СМАД</li>
+                        <li class="about-services__item-text">Спирография</li>
+                        <li class="about-services__item-text">Диагностика сердца</li>
+                    </ul>
+                    <a href="#" class="about-services__link">
+                        <span>Записаться</span>
+                        <img src="assets/images/basil_arrow-up-solid.svg" alt="">
+                    </a>
+                </div>  
+            </div>
+            <button class="about-services__button" id="show-more">
+                <span>Больше услуг</span>
+                <img src="assets/images/basil_arrow-up-solid.svg" alt="arrow">
+            </button>
+            <img class="about-services__background" src="assets/images/big_logo.svg" alt="bg-logo">
+        </div>
+      </section>
+      <section class="promotions">
+        <span class="promotions__label">Акции и предложения</span>
+        <h3 class="promotions__title">
+            Квалифицированные специалисты клиники <br>
+            Врачебная практика
+        </h3>
+        <div class="promotions__cards">
+            <div class="promotions__item">
+                <div class="promotions__info">
+                    <h4>
+                        Ответь на 3 вопроса
+                        и получи скидку <br>
+                        на весенний чек-ап
+                    </h4>
+                    <div class="promotions__icon"><img src="assets/images/promotions_icon/fluent-mdl2_sentiment-analysis.svg" alt="icon"></div>
+                </div>
+                <p class="promotions__excerpt">
+                    Весна — время обновления не только природы, но и организма! 
+                    После зимы иммунитет ослаблен, возможен дефицит витаминов, 
+                    да и общее самочувствие может подводить. Пройди весенний чек-ап, 
+                    чтобы проверить основные показатели здоровья и встретить теплый сезон в полной силе!
+                </p>
+                <a href="" class="promotions__link"><span>Пройти</span><img src="assets/images/basil_arrow-up-solid.svg" alt="arrow"></a>
+            </div>
+            <div class="promotions__item">
+                <div class="promotions__info">
+                    <h4>
+                        Проверьте уровень
+                        витамина D со 
+                        скидкой в 30%
+                    </h4>
+                    <div class="promotions__icon"><img src="assets/images/promotions_icon/solar_sun-outline.svg" alt="icon"></div>
+                </div>
+                <p class="promotions__excerpt">
+                    Чувствуете постоянную усталость, плохое настроение или ломкость ногтей? 
+                    Возможно, всему виной нехватка витамина D! Этот витамин отвечает за крепкие кости, 
+                    ммунитет и даже настроение. Сдай анализ, чтобы узнать, хватает ли тебе «солнечного» витамина, 
+                    и при необходимости скорректируйте уровень.
+                </p>
+                <a href="" class="promotions__link"><span>Записаться</span><img src="assets/images/basil_arrow-up-solid.svg" alt="arrow"></a>
+            </div>
+        </div>
+      </section>
+      <section class="staff">
+        <span class="staff__label">Наш персонал</span>
+        <h3 class="staff__title">
+            Квалифицированные специалисты клиники
+            Врачебная практика
+        </h3>
+        <div class="staff__wrapper">
+            <div class="staff__buttons">
+                <button class="staff__button active">Все врачи</button>
+                <button class="staff__button">Гинеколог</button>
+                <button class="staff__button">Стоматолог</button>
+                <button class="staff__button">Терапевт</button>
+                <button class="staff__button">Уролог</button>
+            </div>
+            <div class="swiper personal-slider">
+                <div class="swiper-wrapper personal-slider__wrapper">
+                    <div class="swiper-slide personal-slider__slide">
+                        <img class="personal-slider__image" src="assets/images/doctors_image/doctor_1.png" alt="Врач">
+                        <h4 class="personal-slider__name">
+                            Малахов Алексей <br>
+                            Михайлович
+                        </h4>
+                        <span class="personal-slider__specialty">
+                            Врач уролог-андролог, врач УЗД
+                        </span>
+                    </div>
+                    <div class="swiper-slide personal-slider__slide">
+                        <img class="personal-slider__image" src="assets/images/doctors_image/doctor_2.png" alt="Врач">
+                        <h4 class="personal-slider__name">
+                            Тананян Наира <br>
+                            Владимировна
+                        </h4>
+                        <span class="personal-slider__specialty">
+                            Акушер-гинеколог, врач УЗД,  <br>
+                            кандидат медицинских наук
+                        </span>
+                    </div>
+                    <div class="swiper-slide personal-slider__slide">
+                        <img class="personal-slider__image" src="assets/images/doctors_image/doctor_3.png" alt="Врач">
+                        <h4 class="personal-slider__name">
+                            Ватоян Марине  <br>
+                            Аршалуисовна
+                        </h4>
+                        <span class="personal-slider__specialty">
+                            Акушер-гинеколог, врач УЗД
+                        </span>
+                    </div>
+                    <div class="swiper-slide personal-slider__slide">
+                        <img class="personal-slider__image" src="assets/images/doctors_image/doctor_4.png" alt="Врач">
+                        <h4 class="personal-slider__name">
+                            Тавакалов Геннадий <br>
+                            Григорьевич
+                        </h4>
+                        <span class="personal-slider__specialty">
+                            Стоматолог-хирург, имплантолог
+                        </span>
+                    </div>
+                    <div class="swiper-slide personal-slider__slide">
+                        <img class="personal-slider__image" src="assets/images/doctors_image/doctor_5.png" alt="Врач">
+                        <h4 class="personal-slider__name">
+                            Оганнесян <br>
+                            Александр Артурович
+                        </h4>
+                        <span class="personal-slider__specialty">
+                            Стоматолог-хирург
+                        </span>
+                    </div>
+                    <div class="swiper-slide personal-slider__slide">
+                        <img class="personal-slider__image" src="assets/images/doctors_image/doctor_6.png" alt="Врач">
+                        <h4 class="personal-slider__name">
+                            Андреасян Георгий <br>
+                            Гагикович
+                        </h4>
+                        <span class="personal-slider__specialty">
+                            Терапевт, парадонтолог
+                        </span>
+                    </div>
+                    <div class="swiper-slide personal-slider__slide">
+                        <img class="personal-slider__image" src="assets/images/doctors_image/doctor_7.png" alt="Врач">
+                        <h4 class="personal-slider__name">
+                            Моисеева Ирина <br>
+                            Юрьевна
+                        </h4>
+                        <span class="personal-slider__specialty">
+                            Терапевт, профпатолог
+                        </span>
+                    </div>
+                    <div class="swiper-slide personal-slider__slide">
+                        <img class="personal-slider__image" src="assets/images/doctors_image/doctor_8.png" alt="Врач">
+                        <h4 class="personal-slider__name">
+                            Сарычева Анна <br>
+                            Александровна
+                        </h4>
+                        <span class="personal-slider__specialty">
+                            Врач кардиолог, к.м.н.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="qualification">
+        <div class="qualification__block">
+            <h3 class="qualification__title">
+                А так же, наши врачи 
+                постоянно учатся <br>
+                и проходят повышение 
+                квалификации
+            </h3>
+            <p class="qualification__quote">
+                Главное в  работе с пациентом - это заинтересованность, сочувствие, забота и желание оказать <br>
+                квалифицированную помощь
+            </p>
+            <div class="qualification__cards">
+                <div class="qualification__item">
+                    <h4 class="qualification__subtitle">
+                        Начните заботу о себе <br>
+                        прямо сейчас
+                    </h4>
+                    <a href="#" class="qualification__link">
+                        <span>Записаться</span>
+                        <img src="assets/images/arrow_right.svg" alt="arrow">
+                    </a>
+                </div>
+                <div class="qualification__item">
+                    <h4 class="qualification__subtitle">
+                        Нужна срочная консультация <br>
+                        профильного врача?
+                    </h4>
+                    <a href="#" class="qualification__link">
+                        <span>Консультация</span>
+                        <img src="assets/images/arrow_right.svg" alt="arrow">
+                    </a>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="dentistry">
+        <div class="dentistry__column">
+            <span class="dentistry__label">Cтоматология</span>
+            <h3 class="dentistry__title">
+                Первоклассные
+                стоматологические услуги
+            </h3>
+            <div class="dentistry__action">
+                <p class="dentistry__quote">
+                    Улыбка — это твоя визитная карточка! Регулярный уход за зубами помогает избежать боли, сложного лечения и сохранить белоснежную улыбку. Запишись на прием, чтобы проверить здоровье зубов и десен — профилактика всегда проще, чем лечение! В клинике работают специалисты:
+                </p>
+                <ul class="dentistry__list">
+                    <li class="dentistry__item">
+                        ортодонт
+                    </li>
+                    <li class="dentistry__item">
+                        стоматолог-хирург
+                    </li>
+                    <li class="dentistry__item">
+                        стоматолог-терапевт
+                    </li>
+                    <li class="dentistry__item">
+                        стоматолог-имплантолог
+                    </li>
+                    <li class="dentistry__item">
+                        стоматолог-ортопед
+                    </li>
+                    
+
+                </ul>
+                <a href="#" class="dentistry__link"><span>Записаться</span><img src="/assets/images/basil_arrow-up-solid.svg" alt="arrow"></a>
+            </div>
+        </div>
+        <div class="dentistry__column">
+            <div class="dentistry__cards">
+                <div class="dentistry__grid">
+                    <img class="dentistry__image" src="assets/images/dent_1.png" alt="">
+                    <div class="dentistry__card dentistry__card--black">
+                        <p class="dentistry__text dentistry__text--black">
+                            Провели более  
+                            <br> 
+                            <span>20</span>
+                            <br> 
+                            успешых протезирований  
+                            <br> 
+                            за последний месяц
+                        </p>
+                        <img class="dentistry__icon dentistry__icon--first" src="assets/images/dentist_icon/vaadin_dental-chair.svg" alt="">
+                    </div>
+                </div>
+                <div class="dentistry__grid">
+                    <div class="dentistry__card dentistry__card--white">
+                        <p class="dentistry__text dentistry__text--white">
+                            Среднее время лечения кариеса
+                            <br>
+                            <span>30-60 <br>  минут</span>
+                        </p>
+                        <img class="dentistry__icon dentistry__icon--second" src="assets/images/dentist_icon/healthicons_tooth-outline.svg" alt="">
+                    </div>
+                    <img class="dentistry__image" src="assets/images/dent_2.png" alt=""></div>
+                </div>
+            
+        </div>
+      </section>
+      <section class="news">
+        <span class="news__label">Новости</span>
+        <h3 class="news__title">
+            Последние новости клиники  <br>
+            Врачебная практика
+        </h3>
+        <div class="news__cards">
+            <div class="news__item">
+                <a href="#" class="news__image"><img src="assets/images/news_image/news_1.png" alt="news"></a>
+                <h4 class="news__subtitle">
+                    С заботой о женском
+                    здоровье
+                </h4>
+                <p class="news__excerpt">
+                    В клинике Врачебная практика теперь возможно сдать анализы на 
+                </p> 
+            </div>
+            <div class="news__item">
+                <a href="#" class="news__image"><img src="assets/images/news_image/news_2.png" alt="news"></a>
+                <h4 class="news__subtitle">
+                    С заботой о сердце
+                </h4>
+                <p class="news__excerpt">
+                    В клинике Врачебная практика теперь возможно сдать анализы на 
+                </p> 
+            </div>
+            <div class="news__item">
+                <a href="#" class="news__image"><img src="assets/images/news_image/news_3.png" alt="news"></a>
+                <h4 class="news__subtitle">
+                    Ведение беременности
+                </h4>
+                <p class="news__excerpt">
+                    В клинике Врачебная практика теперь возможно сдать анализы на 
+                </p> 
+            </div>
+            <div class="news__item">
+                <a href="#" class="news__image"><img src="assets/images/news_image/news_4.png" alt="news"></a>
+                <h4 class="news__subtitle">
+                    3Д компьютерная 
+                    томография
+                </h4>
+                <p class="news__excerpt">
+                    В клинике Врачебная практика теперь возможно сдать анализы на 
+                </p> 
+            </div>
+        </div>
+      </section>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__container">
+          
+          <div class="footer__info">
+            <h3 class="footer__title">Рабочие часы</h3>
+            <p class="footer__text">Ежедневно: <span class="footer__time">8:00-20:00</span></p>
+            <button class="footer__button">Записаться</button>
+      
+            <h3 class="footer__title">Контакты</h3>
+            <p class="footer__text">
+              <strong class="footer__label">Адрес:</strong> 
+              <span class="footer__address">улица Семёна Гордого, 1, Москва</span>
+            </p>
+            <p class="footer__text">
+              <strong class="footer__label">Телефон:</strong> 
+              <a href="tel:+79670103003" class="footer__link">+7 (967) 010-30-03</a>
+            </p>
+            <p class="footer__text">
+              <strong class="footer__label">Почта:</strong> 
+              <a href="mailto:example@yandex.ru" class="footer__email">example@yandex.ru</a>
+            </p>
+      
+            <div class="footer__socials">
+              <a href="#" class="footer__social-link"><img src="assets/images/socials/basil_telegram-outline.svg" alt="Соцсеть 1"></a>
+              <a href="#" class="footer__social-link"><img src="assets/images/socials/hugeicons_vk.svg" alt="Соцсеть 2"></a>
+              <a href="#" class="footer__social-link"><img src="assets/images/socials/ic_baseline-whatsapp.svg" alt="Соцсеть 3"></a>
+            </div>
+          </div>
+      
+          <div class="footer__map">
+            <iframe 
+            src="https://yandex.kz/map-widget/v1/?ll=37.156300%2C55.545242&z=18.2&mode=poi&poi[point]=37.154883%2C55.545546&poi[uri]=ymapsbm1%3A%2F%2Forg%3Foid%3D150642555094"
+              class="footer__iframe" 
+              width="100%" height="100%" frameborder="0">
+            </iframe>
+            
+          </div>
+          
+        </div>
+      
+        <div class="footer__bottom">
+          <a href="#" class="footer__privacy">Политика конфиденциальности</a>
+          <p class="footer__copyright">© Врачебная практика 2025</p>
+          <p class="footer__company-info">
+            ООО "Врачебная практика". Лицензия №041-01137-7710795444<br>
+            Часы работы: 8:00-20:00<br>
+            Адрес: 108808, г. Москва, поселение Первомайское, <br> 
+            деревня Ивановское, улица Семёна Гордого, дом 1, <br> помещение 17Н
+          </p>
+        </div>
+      </footer>
+      
+      
+ 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
