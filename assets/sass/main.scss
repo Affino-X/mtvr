@@ -9,6 +9,8 @@
 @use "news";
 @use "header";
 @use "footer";
+@use "apointment-modal";
+@use "spring-quiz";
 @import "variables";
 
 * {
@@ -16,8 +18,23 @@
   padding: 0;
 }
 
+body {
+}
+
 .main {
   max-width: 1280px;
   margin: 0 auto;
   height: auto;
+  @media (max-width: 1280px) and (min-width: 768px) {
+    padding: 0 5vw;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 5vw;
+  }
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
 }

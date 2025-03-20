@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+  </head>
+  <body>
+    <!-- quiz -->
+    <div class="spring-quiz" id="spring-quiz">
+      <form class="spring-quiz__container">
+        <div class="spring-quiz__content">
+          <div class="spring-quiz__header">
+            <h2 class="spring-quiz__title">Весенний чек-ап со скидкой в 55%</h2>
+          </div>
+
+          <div class="spring-quiz__steps">
+            <span class="spring-quiz__step active">1</span>
+            <span class="spring-quiz__step">2</span>
+            <span class="spring-quiz__step">3</span>
+          </div>
+
+          <div class="spring-quiz__question">
+            <p>Как часто вы проходите медицинское обследование?</p>
+          </div>
+
+          <div class="spring-quiz__answers">
+            <label class="spring-quiz__answer">
+              <input type="radio" name="question1" value="Раз в год" />
+              <span class="spring-quiz__radio-text">Раз в год</span>
+            </label>
+            <label class="spring-quiz__answer">
+              <input
+                type="radio"
+                name="question1"
+                value="Реже, чем раз в 5 лет"
+              />
+              <span class="spring-quiz__radio-text">Реже, чем раз в 5 лет</span>
+            </label>
+            <label class="spring-quiz__answer">
+              <input
+                type="radio"
+                name="question1"
+                value="Никогда не проходил"
+              />
+              <span class="spring-quiz__radio-text"> Никогда не проходил </span>
+            </label>
+          </div>
+        </div>
+        <button type="button" class="spring-quiz__button">
+          <span>Далее</span
+          ><img src="./assets/images/arrow_right.svg" alt="arrow" />
+        </button>
+      </form>
+    </div>
+
+    <script src="/assets/js/main.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+  </body>
+</html>

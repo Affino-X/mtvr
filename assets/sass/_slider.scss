@@ -4,11 +4,9 @@
   box-sizing: border-box;
   @media (max-width: 1280px) and (min-width: 768px) {
     flex-direction: column;
-    padding: 40px;
   }
   @media (max-width: 767px) {
     flex-direction: column;
-    padding: 40px;
   }
   .slider {
     height: 629px;
@@ -27,6 +25,7 @@
       &--first {
         background: url("/mtvr/assets/images/hero_bg/bg_first.png") no-repeat
           center/cover;
+
         // @media (max-width: 767px) {
         //     background: url('/mtvr/assets/images/hero_bg/bg_first.png') no-repeat center/contain;
         //  }

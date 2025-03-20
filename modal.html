@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  <body>
+    <!-- modal -->
+    <div class="appointment-modal" id="appointment-modal">
+      <div class="appointment-modal__container">
+        <h2 class="appointment-modal__title">
+          Администратор Вам перезвонит, <br />
+          <span>заполните пожалуйста данные ниже</span>
+        </h2>
+
+        <form class="appointment-form">
+          <div class="appointment-form__field">
+            <label class="appointment-form__label"
+              >Как к Вам можно обращаться по имени?</label
+            >
+            <input
+              type="text"
+              class="appointment-form__input"
+              placeholder="Укажите Имя"
+              required
+            />
+          </div>
+
+          <div class="appointment-form__field">
+            <label class="appointment-form__label mt-49"
+              >Какая услуга Вас интересует:</label
+            >
+            <div class="appointment-form__options">
+              <label class="appointment-form__option">
+                <input
+                  type="radio"
+                  name="service"
+                  class="appointment-form__radio"
+                  checked
+                />
+                <span class="appointment-form__radio-text">Стоматология</span>
+              </label>
+              <label class="appointment-form__option">
+                <input
+                  type="radio"
+                  name="service"
+                  class="appointment-form__radio"
+                />
+                <span class="appointment-form__radio-text"
+                  >Профильный врач</span
+                >
+              </label>
+              <label class="appointment-form__option">
+                <input
+                  type="radio"
+                  name="service"
+                  class="appointment-form__radio"
+                />
+                <span class="appointment-form__radio-text">Сдать анализы</span>
+              </label>
+              <label class="appointment-form__option">
+                <input
+                  type="radio"
+                  name="service"
+                  class="appointment-form__radio"
+                />
+                <span class="appointment-form__radio-text">Другое</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="appointment-form__field">
+            <label class="appointment-form__label mt-49"
+              >По какому номеру с Вами можно связаться?</label
+            >
+            <input
+            type="tel"
+            class="appointment-form__input"
+            id="form-phone"
+            placeholder="+8 (___) ___-__-__"
+            maxlength="20"
+            pattern="8 \(\d{3}\) \d{3}-\d{2}-\d{2}"
+            required
+          />
+
+
+          <div class="appointment-form__field">
+            <div class="appointment-form__options">
+              <label class="appointment-form__option">
+                <input
+                  type="radio"
+                  name="contact-method"
+                  class="appointment-form__radio"
+                  checked
+                />
+                <span class="appointment-form__radio-text"
+                  >Напишите в Telegram</span
+                >
+              </label>
+              <label class="appointment-form__option">
+                <input
+                  type="radio"
+                  name="contact-method"
+                  class="appointment-form__radio"
+                />
+                <span class="appointment-form__radio-text"
+                  >Напишите в WhatsApp</span
+                >
+              </label>
+              <label class="appointment-form__option">
+                <input
+                  type="radio"
+                  name="contact-method"
+                  class="appointment-form__radio"
+                />
+                <span class="appointment-form__radio-text">Позвоните</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="appointment-form__actions">
+            <button type="submit" class="appointment-button">
+              <span>Записаться </span>
+              <img src="./assets/images/arrow_right.svg" alt="arrow" />
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="/assets/js/main.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+  </body>
+</html>

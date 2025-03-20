@@ -5,12 +5,23 @@
   width: 100%;
   height: auto;
   justify-content: space-between;
+  @media (max-width: 1280px) and (min-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
   .clinic-info {
     position: relative;
     width: 100%;
     max-width: 610px;
     height: 611px;
     box-sizing: border-box;
+    @media (max-width: 768px) {
+      grid-row: 2;
+      display: none;
+    }
     &__photo {
       position: absolute;
       border-radius: 20px;
@@ -88,6 +99,15 @@
   }
 
   .clinic-consulation {
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 1280px) and (min-width: 768px) {
+      grid-row: 1;
+    }
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
     &__label {
       display: flex;
       align-items: center;
@@ -103,6 +123,15 @@
       text-align: center;
       color: rgba(89, 77, 62, 1);
       margin-bottom: 16px;
+      @media (max-width: 1280px) and (min-width: 768px) {
+        justify-self: center;
+        align-self: center;
+      }
+
+      @media (max-width: 768px) {
+        justify-self: center;
+        align-self: center;
+      }
     }
     &__title {
       font-family: Manrope;
@@ -111,6 +140,19 @@
       line-height: 1.4;
       margin: 0;
       margin-bottom: 21px;
+      @media (max-width: 1280px) and (min-width: 768px) {
+        text-align: center;
+        br {
+          display: none;
+        }
+      }
+      @media (max-width: 768px) {
+        font-size: clamp(24px, 5vw, 40px);
+        text-align: center;
+        br {
+          display: none;
+        }
+      }
     }
     &__excerpt {
       font-family: Manrope;
@@ -143,7 +185,7 @@
         left: 0;
         width: 24px;
         height: 24px;
-        background: url("/mtvr/assets/images/lets-icons_done-ring-round.svg")
+        background: url("/assets/images/lets-icons_done-ring-round.svg")
           no-repeat left center;
         background-size: contain;
       }
@@ -160,6 +202,12 @@
       gap: 29px;
       text-decoration: none;
       cursor: pointer;
+      @media (max-width: 1280px) and (min-width: 768px) {
+        align-self: center;
+      }
+      @media (max-width: 768px) {
+        align-self: center;
+      }
       span {
         font-family: Manrope;
         font-weight: 400;

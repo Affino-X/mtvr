@@ -1,0 +1,182 @@
+.appointment-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  z-index: 1000;
+  overflow-y: auto;
+  transition: all 0.3s ease;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1085px;
+    height: 1027px;
+    background: rgba(242, 239, 233, 1);
+    border-radius: 20px;
+    padding: 57px 63px;
+    box-sizing: border-box;
+  }
+
+  // .appointment-modal__title
+
+  &__title {
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: 0%;
+
+    color: #000;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 97px;
+    span {
+      font-family: Manrope;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 100%;
+      letter-spacing: 0%;
+    }
+  }
+}
+.appointment-form {
+  // .appointment-form__field
+  display: grid;
+  width: 100%;
+  &__field {
+    display: grid;
+    height: auto;
+  }
+
+  // .appointment-form__label
+
+  &__label {
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 17px;
+
+    &.mt-49 {
+      margin-top: 49px;
+    }
+  }
+
+  // .appointment-form__input
+
+  &__input {
+    background: rgba(255, 255, 255, 1);
+    border: none;
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    height: 97px;
+    border-radius: 20px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    color: #000;
+    outline: none;
+    &:focus {
+      border: 2px solid rgba(140, 126, 108, 1);
+    }
+    &:placeholder {
+      color: rgba(140, 126, 108, 1);
+    }
+  }
+
+  // .appointment-form__options
+
+  &__options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+
+  // .appointment-form__option
+
+  &__option {
+  }
+
+  // .appointment-form__radio
+
+  &__radio {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  // .appointment-form__radio-text
+
+  &__radio-text {
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    position: relative;
+    padding-left: 44px;
+    cursor: pointer;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 24px;
+      height: 24px;
+      background: url("/mtvr/assets/images/non-active.svg");
+      transition: background 0.6s;
+    }
+  }
+
+  .appointment-form__radio:checked + .appointment-form__radio-text::before {
+    background: url("/mtvr/assets/images/active.svg");
+    border-color: rgba(89, 77, 62, 1);
+  }
+
+  // .appointment-form__actions
+
+  &__actions {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 10vw;
+    margin-top: auto;
+  }
+}
+.appointment-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: none;
+  outline: none;
+  width: 264px;
+  height: 68px;
+  border-radius: 50px;
+  background: rgba(89, 77, 62, 1);
+  color: #fff;
+  font-family: Manrope;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  cursor: pointer;
+  img {
+    width: 16px;
+    height: 20px;
+  }
+}

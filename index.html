@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MVRT</title>
     <link rel="stylesheet" href="assets/css/main.css">
@@ -44,7 +45,24 @@
                     </button>
                     <button class="header__appointment">Записаться</button>
                   </div>
+                  <button type="button" class="menu-toggle" id="open-hamburger-menu">
+                    <span class="menu-toggle__open">
+                        <svg class="menu-toggle__icon" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 13h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 7h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 19h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1z"></path></svg>
+                    </span>
+                    <span class="menu-toggle__close">
+                        <svg class="menu-toggle__icon"  fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5.293 6.707l5.293 5.293-5.293 5.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l5.293-5.293 5.293 5.293c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414l-5.293-5.293 5.293-5.293c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-5.293 5.293-5.293-5.293c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z"></path></svg>
+                    </span>
+                  </button>
             </div>
+        </div>
+        <div class="hamburger-menu collapsed">
+            <nav class="hamburger-menu__nav">
+                <a class="hamburger-menu__item" href="#">Услуги</a>
+                <a class="hamburger-menu__item" href="#">Прайс</a>
+                <a class="hamburger-menu__item" href="#">Врачи</a>
+                <a class="hamburger-menu__item" href="#">Стоматология</a>
+                <a class="hamburger-menu__item" href="#">Контакты</a>
+              </nav>
         </div>
     </header>  
     <!-- main -->
@@ -373,7 +391,7 @@
                     да и общее самочувствие может подводить. Пройди весенний чек-ап, 
                     чтобы проверить основные показатели здоровья и встретить теплый сезон в полной силе!
                 </p>
-                <a href="" class="promotions__link"><span>Пройти</span><img src="./assets/images/basil_arrow-up-solid.svg" alt="arrow"></a>
+                <a role="button" class="promotions__link open-spring-quiz"><span>Пройти</span><img src="./assets/images/basil_arrow-up-solid.svg" alt="arrow"></a>
             </div>
             <div class="promotions__item">
                 <div class="promotions__info">
@@ -390,7 +408,7 @@
                     ммунитет и даже настроение. Сдай анализ, чтобы узнать, хватает ли тебе «солнечного» витамина, 
                     и при необходимости скорректируйте уровень.
                 </p>
-                <a href="" class="promotions__link"><span>Записаться</span><img src="./assets/images/basil_arrow-up-solid.svg" alt="arrow"></a>
+                <a role="button" class="promotions__link open-appointment-modal"><span>Записаться</span><img src="./assets/images/basil_arrow-up-solid.svg" alt="arrow"></a>
             </div>
         </div>
       </section>
@@ -671,6 +689,8 @@
               <a href="#" class="footer__social-link"><img src="./assets/images/socials/hugeicons_vk.svg" alt="Соцсеть 2"></a>
               <a href="#" class="footer__social-link"><img src="./assets/images/socials/ic_baseline-whatsapp.svg" alt="Соцсеть 3"></a>
             </div>
+
+            <img class="footer__intersect" src="./assets/images/intersect_footer.svg" alt="intersect">
           </div>
       
           <div class="footer__map">
@@ -695,10 +715,182 @@
           </p>
         </div>
       </footer>
+      <!-- quiz -->
+      <div class="spring-quiz hidden" id="spring-quiz">
+        <form class="spring-quiz__container">
+          <div class="spring-quiz__content">
+            <div class="spring-quiz__header">
+              <h2 class="spring-quiz__title">Весенний чек-ап со скидкой в 55%</h2>
+            </div>
+  
+            <div class="spring-quiz__steps">
+              <span class="spring-quiz__step active">1</span>
+              <span class="spring-quiz__step">2</span>
+              <span class="spring-quiz__step">3</span>
+            </div>
+  
+            <div class="spring-quiz__question">
+              <p>Как часто вы проходите медицинское обследование?</p>
+            </div>
+  
+            <div class="spring-quiz__answers">
+              <label class="spring-quiz__answer">
+                <input type="radio" name="question1" value="Раз в год" />
+                <span class="spring-quiz__radio-text">Раз в год</span>
+              </label>
+              <label class="spring-quiz__answer">
+                <input
+                  type="radio"
+                  name="question1"
+                  value="Реже, чем раз в 5 лет"
+                />
+                <span class="spring-quiz__radio-text">Реже, чем раз в 5 лет</span>
+              </label>
+              <label class="spring-quiz__answer">
+                <input
+                  type="radio"
+                  name="question1"
+                  value="Никогда не проходил"
+                />
+                <span class="spring-quiz__radio-text"> Никогда не проходил </span>
+              </label>
+            </div>
+          </div>
+          <button type="button" class="spring-quiz__button">
+            <span>Далее</span
+            ><img src="./assets/images/arrow_right.svg" alt="arrow" />
+          </button>
+        </form>
+      </div>
+
+      <!-- modal -->
+      <div class="appointment-modal hidden" id="appointment-modal">
+        <div class="appointment-modal__container">
+          <h2 class="appointment-modal__title">
+            Администратор Вам перезвонит, <br />
+            <span>заполните пожалуйста данные ниже</span>
+          </h2>
+  
+          <form class="appointment-form">
+            <div class="appointment-form__field">
+              <label class="appointment-form__label"
+                >Как к Вам можно обращаться по имени?</label
+              >
+              <input
+                type="text"
+                class="appointment-form__input"
+                placeholder="Укажите Имя"
+                required
+              />
+            </div>
+  
+            <div class="appointment-form__field">
+              <label class="appointment-form__label mt-49"
+                >Какая услуга Вас интересует:</label
+              >
+              <div class="appointment-form__options">
+                <label class="appointment-form__option">
+                  <input
+                    type="radio"
+                    name="service"
+                    class="appointment-form__radio"
+                    checked
+                  />
+                  <span class="appointment-form__radio-text">Стоматология</span>
+                </label>
+                <label class="appointment-form__option">
+                  <input
+                    type="radio"
+                    name="service"
+                    class="appointment-form__radio"
+                  />
+                  <span class="appointment-form__radio-text"
+                    >Профильный врач</span
+                  >
+                </label>
+                <label class="appointment-form__option">
+                  <input
+                    type="radio"
+                    name="service"
+                    class="appointment-form__radio"
+                  />
+                  <span class="appointment-form__radio-text">Сдать анализы</span>
+                </label>
+                <label class="appointment-form__option">
+                  <input
+                    type="radio"
+                    name="service"
+                    class="appointment-form__radio"
+                  />
+                  <span class="appointment-form__radio-text">Другое</span>
+                </label>
+              </div>
+            </div>
+  
+            <div class="appointment-form__field">
+              <label class="appointment-form__label mt-49"
+                >По какому номеру с Вами можно связаться?</label
+              >
+              <input
+              type="tel"
+              class="appointment-form__input"
+              id="form-phone"
+              placeholder="+8 (___) ___-__-__"
+              maxlength="20"
+              pattern="8 \(\d{3}\) \d{3}-\d{2}-\d{2}"
+              required
+            />
+  
+  
+            <div class="appointment-form__field">
+              <div class="appointment-form__options">
+                <label class="appointment-form__option">
+                  <input
+                    type="radio"
+                    name="contact-method"
+                    class="appointment-form__radio"
+                    checked
+                  />
+                  <span class="appointment-form__radio-text"
+                    >Напишите в Telegram</span
+                  >
+                </label>
+                <label class="appointment-form__option">
+                  <input
+                    type="radio"
+                    name="contact-method"
+                    class="appointment-form__radio"
+                  />
+                  <span class="appointment-form__radio-text"
+                    >Напишите в WhatsApp</span
+                  >
+                </label>
+                <label class="appointment-form__option">
+                  <input
+                    type="radio"
+                    name="contact-method"
+                    class="appointment-form__radio"
+                  />
+                  <span class="appointment-form__radio-text">Позвоните</span>
+                </label>
+              </div>
+            </div>
+  
+            <div class="appointment-form__actions">
+              <button type="submit" class="appointment-button">
+                <span>Записаться </span>
+                <img src="./assets/images/arrow_right.svg" alt="arrow" />
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
       
       
  
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="main.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="https://unpkg.com/imask"></script>
 </body>
 </html>
