@@ -1,3 +1,14 @@
+@function scale-prop($old) {
+  @return calc($old * 0.8635);
+}
+
+@function scale-prop-tablet($old) {
+  @return calc($old * 0.6631);
+}
+
+@function scale-prop-mobile($old) {
+  @return calc($old * 0.3318);
+}
 .spring-quiz {
   // .spring-quiz__header
   position: fixed;
@@ -11,26 +22,57 @@
   justify-content: center;
   z-index: 1000;
   overflow-y: auto;
-
+  background: rgba(0, 0, 0, 0.5);
   &__container {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    max-width: 1085px;
+    position: relative;
+    max-width: 936px;
     width: 100%;
-    height: 753px;
+    height: 650px;
     background: rgba(242, 239, 233, 1);
     border-radius: 20px;
     box-sizing: border-box;
     padding-bottom: 75px;
+    @media (max-width: 1280px) and (min-width: 767px) {
+      max-width: scale-prop-tablet(936px);
+      padding-bottom: scale-prop-tablet(75px);
+    }
+    @media (max-width: 768px) {
+      max-width: 90vw;
+      height: 600px;
+      padding-bottom: 30px;
+    }
   }
   &__content {
     box-sizing: border-box;
-    padding-top: 57px;
-    padding-left: 84px;
+    padding-top: calc(57px * (0.8635));
+    padding-left: calc(84px * (0.8635));
+    @media (max-width: 1280px) and (min-width: 767px) {
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+    }
+    @media (max-width: 768px) {
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+    }
   }
   &__header {
     margin-bottom: 140px;
+    @media (max-width: 1280px) and (min-width: 767px) {
+      align-self: center;
+      text-align: center;
+      margin-top: 28px;
+      margin-bottom: 80px;
+    }
+    @media (max-width: 768px) {
+      align-self: center;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 60px;
+    }
   }
 
   // .spring-quiz__title
@@ -38,13 +80,18 @@
   &__title {
     font-family: Manrope;
     font-weight: 700;
-    font-size: 48px;
+    font-size: calc(48px * (0.8635));
     line-height: 120%;
     letter-spacing: 0%;
     max-width: 411px;
     width: 100%;
     margin: 0;
-
+    @media (max-width: 1280px) and (min-width: 767px) {
+      font-size: 40px;
+    }
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
     color: rgba(0, 0, 0, 1);
   }
 
@@ -52,45 +99,55 @@
 
   &__steps {
     display: flex;
-    gap: 45px;
+    // gap: scale-prop(45px);
     position: absolute;
-    top: 71px;
-    right: 108px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 10%;
-      width: 80%;
-      height: 1px;
-      background: #5a483a;
-      transform: translateY(-50%);
-      z-index: 0;
+    align-items: center;
+    width: 300px;
+    top: scale-prop(71px);
+    right: scale-prop(108px);
+    @media (max-width: 1280px) and (min-width: 767px) {
+      position: static;
+      align-self: center;
+      width: 300px;
+    }
+    @media (max-width: 768px) {
+      position: static;
+      align-self: center;
+      width: 250px;
+      margin-top: 40px;
     }
   }
 
   // .spring-quiz__step
 
   &__step {
-    position: relative;
+    // position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: Manrope;
     font-weight: 700;
-    font-size: 40px;
+    font-size: scale-prop(40px);
     line-height: 100%;
     letter-spacing: 0%;
     text-align: center;
     vertical-align: middle;
     color: rgba(89, 77, 62, 1);
-    width: 87px;
+    width: scale-prop(87px);
+
     background: rgba(255, 255, 255, 1);
     border: 1px solid rgba(89, 77, 62, 1);
     border-radius: 50%;
-    height: 87px;
+    height: scale-prop(87px);
     z-index: 1;
+    @media (max-width: 1280px) and (min-width: 767px) {
+      // width: scale-prop-tablet(87px);
+      // height: scale-prop-tablet(87px);
+    }
+    @media (max-width: 768px) {
+      width: 60px;
+      height: 60px;
+    }
     &.completed {
       color: rgba(140, 126, 108, 1);
       border-color: #5a483a;
@@ -103,7 +160,11 @@
       border-color: #5a483a;
     }
   }
-
+  &__line {
+    flex-grow: 1;
+    height: 1px;
+    background: #5a483a;
+  }
   // .spring-quiz__step--active
 
   &__step--active {
@@ -114,7 +175,7 @@
   &__question {
     font-family: Manrope;
     font-weight: 700;
-    font-size: 24px;
+    font-size: scale-prop(24px);
     line-height: 100%;
     letter-spacing: 0%;
     color: rgba(0, 0, 0, 1);
@@ -126,7 +187,7 @@
 
   &__answers {
     display: grid;
-    gap: 33px;
+    gap: scale-prop(33px);
   }
 
   // .spring-quiz__answer
@@ -144,18 +205,23 @@
     position: relative;
     font-family: Manrope;
     font-weight: 400;
-    font-size: 24px;
+    font-size: scale-prop(24px);
     line-height: 100%;
     letter-spacing: 0%;
     color: #000;
     padding-left: 44px;
+    @media (max-width: 768px) {
+      display: flex;
+      font-size: 16px;
+      line-height: 1.3;
+    }
     cursor: pointer;
     &::before {
       content: "";
       position: absolute;
       left: 0;
       top: 50%;
-      transform: translateY(-50%);
+      transform: translateY(-50%) scale(0.8);
       width: 24px;
       height: 24px;
       background: url("/mtvr/assets/images/non-active.svg");
@@ -182,11 +248,14 @@
     justify-content: space-between;
     border-radius: 50px;
     width: 100%;
-    max-width: 264px;
-    height: 68px;
+    max-width: scale-prop(264px);
+    height: scale-prop(68px);
     box-sizing: border-box;
-    padding: 0 40px;
+    padding: 0 scale-prop(40px);
     cursor: pointer;
+    @media (max-width: 768px) {
+      max-width: scale-prop-tablet(264px);
+    }
     span {
       font-family: Manrope;
       font-weight: 600;
@@ -195,6 +264,9 @@
       letter-spacing: 0%;
       vertical-align: middle;
       color: #fff;
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
     }
     img {
       width: 15px;
@@ -205,14 +277,30 @@
   &__final &__title {
     max-width: none;
     width: 100%;
+    @media (max-width: 1280px) and (min-width: 767px) {
+      font-size: 36px;
+      text-align: center;
+      // padding: 0 50px;
+      box-sizing: border-box;
+      margin-bottom: 85px;
+    }
+    @media (max-width: 768px) {
+      font-size: 28px;
+      margin-bottom: 95px;
+    }
   }
   &__final &__label {
     font-family: Manrope;
     font-weight: 700;
-    font-size: 24px;
+    font-size: scale-prop(24px);
     line-height: 100%;
     letter-spacing: 0%;
-
+    @media (max-width: 1280px) and (min-width: 767px) {
+      font-size: scale-prop-tablet(24px);
+    }
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
     margin: 0;
     margin-bottom: 12px;
   }
@@ -221,19 +309,27 @@
     flex-direction: column;
   }
   &__final &__input {
-    width: 959px;
-    height: 97px;
+    width: scale-prop(900px);
+    height: scale-prop(97px);
     border-radius: 20px;
     border: none;
     outline: none;
     font-family: Manrope;
     font-weight: 400;
-    font-size: 24px;
+    font-size: scale-prop(24px);
     line-height: 100%;
     letter-spacing: 0%;
     color: #000;
     padding-left: 30px;
     box-sizing: border-box;
+    @media (max-width: 1280px) and (min-width: 767px) {
+      width: 100%;
+      height: scale-prop-tablet(97px);
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+      height: scale-prop-tablet(97px);
+    }
     &:focus {
       border: 2px solid rgba(140, 126, 108, 1);
     }
@@ -244,5 +340,31 @@
   #quizButton {
     max-width: 310px;
     padding: 0 30px;
+
+    @media (max-width: 768px) {
+      max-width: scale-prop-tablet(350px);
+    }
+  }
+
+  &__close {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    border: none;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
+    @media (max-width: 768px) {
+      top: 20px;
+      right: 20px;
+      width: 25px;
+      height: 25px;
+    }
+    svg {
+      color: #5a483a;
+      width: 100%;
+      height: 100%;
+    }
   }
 }

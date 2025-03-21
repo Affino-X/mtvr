@@ -148,6 +148,7 @@
     line-height: 100%;
     letter-spacing: 0%;
     color: inherit;
+    cursor: pointer;
     @media (max-width: 768px) {
       font-size: 16px;
     }
@@ -184,6 +185,7 @@
     height: 60px;
     background: #fff;
     border-radius: 50%;
+    cursor: pointer;
   }
 
   // .footer__map
